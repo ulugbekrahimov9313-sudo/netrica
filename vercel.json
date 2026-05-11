@@ -1,1 +1,1 @@
-﻿{"rewrites":[{"source":"/google8ea5898b5fb189db.html","destination":"/google8ea5898b5fb189db.html"},{"source":"/(.*)","destination":"/index.html"}]}
+{"version":2,"builds":[{"src":"server.py","use":"@vercel/python"}],"routes":[{"src":"/(.*)","dest":"/server.py"}]}
