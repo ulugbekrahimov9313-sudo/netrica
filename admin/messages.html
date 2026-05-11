@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Netrica.com — Admin messages</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body data-admin="1" data-page="admin-messages">
+  <script>window.NETRICA_BASE = "..";</script>
+  <div id="app-header"></div>
+
+  <main id="main" class="container">
+    <section class="section admin-subpage-shell">
+      <div class="section-title">
+        <h2 data-i18n="ui.adminPage.messagesTitle"></h2>
+        <p class="muted" data-i18n="ui.adminPage.demoModeration"></p>
+      </div>
+
+      <div class="card pad admin-panel-card">
+        <h3 style="margin:0 0 14px" data-i18n="supportWidget.title"></h3>
+        <div id="admin-support-chat"></div>
+      </div>
+
+      <div class="card pad admin-panel-card" style="margin-top:14px">
+        <h3 style="margin:0 0 10px" data-i18n="ui.adminPage.messagesTitle"></h3>
+        <div id="admin-inbox-list"></div>
+        <div id="admin-inbox-detail" style="display:none"></div>
+        <div style="margin-top:12px"><a class="btn" href="index.html" data-i18n="ui.adminPage.back"></a></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="app-footer"></div>
+
+  <script src="../assets/js/i18n-fallback.js"></script>
+  <script src="../assets/js/data.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

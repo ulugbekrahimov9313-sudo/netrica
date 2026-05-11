@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Netrica.com — Admin stats</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body data-admin="1" data-protected="1" data-page="admin-stats">
+  <script>window.NETRICA_BASE = "..";</script>
+
+  <div id="app-header"></div>
+
+  <main id="main" class="container">
+    <section class="section admin-subpage-shell">
+      <div class="section-title">
+        <h2 data-i18n="ui.adminPage.statsTitle"></h2>
+        <p class="muted" data-i18n="ui.adminPage.adminOverview"></p>
+      </div>
+
+      <div class="grid-3 admin-stats-grid">
+        <div class="card pad admin-panel-card">
+          <h3 data-i18n="ui.adminPage.usersTitle"></h3>
+          <p id="stats-users" class="muted">—</p>
+        </div>
+        <div class="card pad admin-panel-card">
+          <h3 data-i18n="ui.adminPage.ordersTitle"></h3>
+          <p id="stats-orders" class="muted">—</p>
+        </div>
+        <div class="card pad admin-panel-card">
+          <h3 data-i18n="ui.adminPage.revenue"></h3>
+          <p id="stats-revenue" class="muted">—</p>
+        </div>
+      </div>
+
+      <div style="margin-top:12px">
+        <a class="btn" href="index.html" data-i18n="ui.adminPage.back"></a>
+      </div>
+    </section>
+  </main>
+
+  <div id="app-footer"></div>
+
+  <script src="../assets/js/i18n-fallback.js"></script>
+  <script src="../assets/js/data.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      if (!window.Netrica || !window.Netrica.requireAdmin()) return;
+
+      const read = (key, fallback) => {
+        try {
+          const raw = localStorage.getItem(key);
+          return raw ? JSON.parse(raw) : fallback;
+        } catch {
+          return fallback;
+        }
+      };
+
+      const users = read("netrica_users", []);
+      const orders = read("netrica_orders", []);
+      const subs = read("netrica_subs", []);
+
+      const revenue =
+        orders.length * 99 +
+        subs.filter((x) => x && x.active).length * 29;
+
+      const usersEl = document.getElementById("stats-users");
+      const ordersEl = document.getElementById("stats-orders");
+      const revenueEl = document.getElementById("stats-revenue");
+
+      if (usersEl) usersEl.textContent = String(users.length);
+      if (ordersEl) ordersEl.textContent = String(orders.length);
+      if (revenueEl) revenueEl.textContent = `$${revenue}`;
+    });
+  </script>
+</body>
+</html>

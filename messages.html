@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Netrica.com — Messages</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body data-protected="1" data-page="messages">
+  <div id="app-header"></div>
+
+  <main id="main" class="container">
+    <section class="section page-intro page-intro-messages">
+      <div class="page-intro-copy">
+        <div class="hero-badge" data-i18n="ui.badge.messageGrid"></div>
+        <h1 class="h1" data-i18n="page.messages.title"></h1>
+        <p class="lead" data-i18n="page.messages.subtitle"></p>
+      </div>
+      <div class="page-intro-stats">
+        <div class="page-intro-stat"><span data-i18n="ui.stat.threads"></span><strong data-i18n="ui.stat.live"></strong></div>
+        <div class="page-intro-stat"><span data-i18n="ui.stat.queue"></span><strong data-i18n="ui.stat.open"></strong></div>
+        <div class="page-intro-stat"><span data-i18n="ui.stat.support"></span><strong data-i18n="ui.stat.sync"></strong></div>
+      </div>
+    </section>
+
+    <section class="section page-shell-stack">
+      <div class="section-title">
+        <h2 data-i18n="page.messages.title"></h2>
+        <p class="muted" data-i18n="page.messages.subtitle"></p>
+      </div>
+
+      <div class="pills messages-switcher" style="margin:0 0 12px">
+        <button class="btn primary" type="button" id="msg-tab-threads" data-i18n="page.messages.threads"></button>
+        <button class="btn" type="button" id="msg-tab-compose" data-i18n="page.messages.sendTitle"></button>
+      </div>
+
+      <div class="card pad user-list-card messages-workspace" id="messages-panel">
+        <h3 style="margin-top:0" data-i18n="page.messages.threads"></h3>
+        <div class="list" id="messages"></div>
+      </div>
+
+      <div class="card pad compose-card hidden" id="compose-panel" style="margin-top:14px">
+        <h3 style="margin-top:0" data-i18n="page.messages.sendTitle"></h3>
+        <form class="form" id="msg-form">
+          <div class="field">
+            <label for="msg-text" data-i18n="page.messages.messageLabel"></label>
+            <textarea id="msg-text" required></textarea>
+          </div>
+          <button class="btn primary" type="submit" data-i18n="page.messages.sendButton"></button>
+        </form>
+      </div>
+
+      <div class="card pad user-list-card" id="admin-msgs-panel" style="margin-top:14px">
+        <h3 style="margin-top:0">Admin xabarlari</h3>
+        <div id="admin-msgs-for-user"></div>
+        <div id="admin-msg-detail-user" style="display:none"></div>
+      </div>
+
+    </section>
+  </main>
+
+  <div id="app-footer"></div>
+
+  <script src="assets/js/i18n-fallback.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

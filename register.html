@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Netrica.com — Register</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body data-page="register">
+  <div id="app-header"></div>
+
+  <main id="main" class="container auth-shell">
+    <section class="section auth-layout">
+      <div class="auth-copy auth-copy-panel">
+        <div class="hero-badge">NETRICA</div>
+        <h1 class="h1" data-i18n="page.register.title"></h1>
+        <p class="lead" data-i18n="page.register.subtitle"></p>
+        <div class="auth-signal-grid">
+          <div class="auth-signal-card">
+            <span data-i18n="ui.auth.profileLabel"></span>
+            <strong data-i18n="ui.auth.ready"></strong>
+          </div>
+          <div class="auth-signal-card">
+            <span data-i18n="ui.auth.meshId"></span>
+            <strong data-i18n="ui.auth.active"></strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="card pad auth-card">
+        <form id="register-form" class="form">
+          <div class="field">
+            <label for="name" data-i18n="page.register.name"></label>
+            <input id="name" />
+          </div>
+          <div class="field">
+            <label for="email" data-i18n="page.register.email"></label>
+            <input id="email" type="email" required />
+          </div>
+          <div class="field">
+            <label for="password" data-i18n="page.register.password"></label>
+            <input id="password" type="password" required />
+            <div class="helper" data-i18n="page.register.helper"></div>
+          </div>
+          <button class="btn primary auth-submit" type="submit" data-i18n="page.register.button"></button>
+          <div class="small auth-links">
+            <a href="login.html" data-i18n="page.register.haveAccount"></a>
+          </div>
+        </form>
+        <div style="display:flex; justify-content:flex-end; margin-top:14px">
+          <a class="btn ghost" href="index.html" style="padding:8px 16px; font-size:12px">← Orqa</a>
+        </div>
+      </div>
+
+  <div id="app-footer"></div>
+
+  <script src="assets/js/i18n-fallback.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

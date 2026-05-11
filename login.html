@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Netrica.com — Login</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body data-page="login">
+  <div id="app-header"></div>
+
+  <main id="main" class="container auth-shell">
+    <section class="section auth-layout">
+      <div class="auth-copy auth-copy-panel">
+        <div class="hero-badge">NETRICA</div>
+        <h1 class="h1" data-i18n="page.login.title"></h1>
+        <div class="auth-signal-grid">
+          <div class="auth-signal-card">
+            <span data-i18n="ui.auth.authNode"></span>
+            <strong data-i18n="ui.auth.secured"></strong>
+          </div>
+          <div class="auth-signal-card">
+            <span data-i18n="ui.auth.access"></span>
+            <strong data-i18n="ui.auth.realtime"></strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="card pad auth-card">
+        <form id="login-form" class="form">
+          <div class="field">
+            <label for="email" data-i18n="page.login.email"></label>
+            <input id="email" type="email" required />
+          </div>
+          <div class="field">
+            <label for="password" data-i18n="page.login.password"></label>
+            <input id="password" type="password" required />
+          </div>
+          <button class="btn primary auth-submit" type="submit" data-i18n="page.login.button"></button>
+          <div class="small auth-links">
+            <a href="forgot-password.html" data-i18n="page.login.forgot"></a>
+            <span class="muted"> • </span>
+            <a href="register.html" data-i18n="page.login.create"></a>
+          </div>
+        </form>
+        <div style="display:flex; justify-content:flex-end; margin-top:14px">
+          <a class="btn ghost" href="index.html" style="padding:8px 16px; font-size:12px">← Orqa</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="app-footer"></div>
+
+  <script src="assets/js/i18n-fallback.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

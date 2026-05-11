@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Netrica.com — Landing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body data-page="home">
+  <canvas id="particles"></canvas>
+  <div id="app-header"></div>
+
+  <main id="main">
+    <section class="hero hero-visual" aria-label="Hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-inner hero-shell">
+        <div class="hero-copy">
+          <div class="hero-badge hero-badge-logo" aria-label="NETRICA">
+            <img src="assets/img/logo.svg" alt="" />
+          </div>
+          <h1 class="h1 hero-title" data-i18n="home.title"></h1>
+          <div class="hero-auth-actions">
+            <a class="btn hero-auth-btn" href="login.html" data-i18n="nav.login"></a>
+            <a class="btn hero-auth-btn" href="register.html" data-i18n="nav.register"></a>
+          </div>
+          <div class="hero-stats" aria-label="Platform statistikasi">
+            <div class="hero-stat-item" data-count-to="500">
+              <strong class="hero-stat-value">0</strong>
+              <span>Loyihalar</span>
+            </div>
+            <div class="hero-stat-item" data-count-to="50">
+              <strong class="hero-stat-value">0</strong>
+              <span>Mijozlar</span>
+            </div>
+            <div class="hero-stat-item" data-count-to="99" data-suffix="%">
+              <strong class="hero-stat-value">0</strong>
+              <span>Mamnunlik</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="how-it-works">
+      <div class="container">
+        <div class="section-title">
+          <h2>Qanday ishlaydi?</h2>
+        </div>
+        <div class="steps-grid">
+          <a href="chat.html" class="step-card">
+            <div class="step-number">01</div>
+            <h3>G'oya</h3>
+            <p>Bizga g'oyangizni ayting</p>
+          </a>
+          <div class="step-arrow">→</div>
+          <a href="products.html" class="step-card">
+            <div class="step-number">02</div>
+            <h3>TZ</h3>
+            <p>Biz texnik topshiriq tuzamiz</p>
+          </a>
+          <div class="step-arrow">→</div>
+          <a href="my-orders.html" class="step-card">
+            <div class="step-number">03</div>
+            <h3>Natija</h3>
+            <p>Tayyor mahsulot qo'lingizda</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <section class="section" id="directions">
+        <div class="section-title">
+          <h2 data-i18n="ui.hero.aiWebOps"></h2>
+          <p data-i18n="ui.hero.tagline"></p>
+        </div>
+
+        <div class="grid-3 hero-direction-grid" style="gap:16px">
+          <a class="card pad hero-card" href="products.html" style="text-decoration:none">
+            <div class="hero-card-label">01</div>
+            <h3 style="margin:0 0 8px" data-i18n="home.card1Title"></h3>
+            <p class="muted" style="margin:0" data-i18n="products.subtitle"></p>
+          </a>
+
+          <a class="card pad hero-card" href="chat.html" style="text-decoration:none">
+            <div class="hero-card-label">02</div>
+            <h3 style="margin:0 0 8px" data-i18n="home.card2Title"></h3>
+            <p class="muted" style="margin:0" data-i18n="chat.onlyNetrica"></p>
+          </a>
+
+          <a class="card pad hero-card" href="product-detail.html?id=netrica-orders#order" style="text-decoration:none">
+            <div class="hero-card-label">03</div>
+            <h3 style="margin:0 0 8px" data-i18n="home.card3Title"></h3>
+            <p class="muted" style="margin:0" data-i18n="order.hint"></p>
+          </a>
+        </div>
+      </section>
+
+      <section class="section" id="platform">
+        <div class="section-title">
+          <h2 data-i18n="ui.hero.networkMesh"></h2>
+        </div>
+        <div class="card hero-stage-panel">
+          <div class="hero-stage-grid"></div>
+          <div class="hero-stage-orbit">
+            <span class="hero-stage-ring hero-stage-ring-a"></span>
+            <span class="hero-stage-ring hero-stage-ring-b"></span>
+            <span class="hero-stage-ring hero-stage-ring-c"></span>
+
+            <div class="hero-stage-core">
+              <span class="hero-stage-kicker" data-i18n="ui.hero.networkMesh"></span>
+              <strong data-i18n="ui.hero.aiWebOps"></strong>
+              <p data-i18n="ui.hero.tagline"></p>
+            </div>
+
+            <div class="hero-stage-chip hero-stage-chip-a" data-i18n="ui.hero.sync247"></div>
+            <div class="hero-stage-chip hero-stage-chip-b" data-i18n="ui.hero.latencyLow"></div>
+            <div class="hero-stage-chip hero-stage-chip-c" data-i18n="ui.hero.secureFlow"></div>
+          </div>
+
+          <div class="hero-stage-metrics">
+            <div class="hero-stage-metric">
+              <span data-i18n="ui.hero.ai"></span>
+              <strong data-i18n="ui.stat.val247"></strong>
+            </div>
+            <div class="hero-stage-metric">
+              <span data-i18n="ui.hero.pipeline"></span>
+              <strong data-i18n="ui.stat.val360"></strong>
+            </div>
+            <div class="hero-stage-metric">
+              <span data-i18n="ui.hero.uptime"></span>
+              <strong data-i18n="ui.stat.val999"></strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div>
+          <div class="section-title">
+            <h2 data-i18n="home.aboutTitle"></h2>
+          </div>
+          <div class="grid-3" style="gap:16px">
+            <a class="card pad about-card" href="about.html?topic=2025" style="text-decoration:none">
+              <h3 data-i18n="home.aboutStat1Title"></h3>
+              <p class="muted about-more" data-i18n="home.aboutStat1Desc"></p>
+            </a>
+            <a class="card pad about-card" href="about.html?topic=ai-web" style="text-decoration:none">
+              <h3 data-i18n="home.aboutStat2Title"></h3>
+              <p class="muted about-more" data-i18n="home.aboutStat2Desc"></p>
+            </a>
+            <a class="card pad about-card" href="about.html?topic=platform" style="text-decoration:none">
+              <h3 data-i18n="home.aboutStat3Title"></h3>
+              <p class="muted about-more" data-i18n="home.aboutStat3Desc"></p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="testimonials">
+        <div class="section-title">
+          <h2>Mijozlar fikri</h2>
+          <p>NETRICA bilan ishlagan jamoalarning real tajribasi.</p>
+        </div>
+        <div class="testimonials-grid">
+          <article class="card pad testimonial-card">
+            <p>"2 haftada MVP tayyor bo'ldi. Jarayon shaffof, natija esa kutganimizdan yuqori."</p>
+            <div class="testimonial-author">Aziza Karimova</div>
+            <div class="small muted">Startup asoschisi</div>
+          </article>
+          <article class="card pad testimonial-card">
+            <p>"TZ bosqichi juda puxta bo'lgani uchun ishlab chiqish tez ketdi va qayta ishlashlar kamaydi."</p>
+            <div class="testimonial-author">Jasur To'xtayev</div>
+            <div class="small muted">IT menejer</div>
+          </article>
+          <article class="card pad testimonial-card">
+            <p>"Dashboard va integratsiyalar bir platformada yig'ilgani jamoamiz uchun juda qulay bo'ldi."</p>
+            <div class="testimonial-author">Madina Raximova</div>
+            <div class="small muted">Loyiha koordinatori</div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="faq">
+        <div class="section-title">
+          <h2>FAQ</h2>
+          <p>Eng ko'p beriladigan savollar.</p>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>NETRICA qanday xizmatlar beradi?</summary>
+            <p>Web platforma, AI integratsiya, chat tizimi, dashboard va texnik topshiriq tayyorlash xizmatlarini taqdim etadi.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Loyiha necha kunda tayyor bo'ladi?</summary>
+            <p>Hajmga qarab o'zgaradi, lekin MVP odatda 2-4 hafta ichida tayyorlanadi.</p>
+          </details>
+          <details class="faq-item">
+            <summary>TZ bo'lmasa ham buyurtma bersam bo'ladimi?</summary>
+            <p>Ha, biz siz bilan birga TZ ishlab chiqamiz va tasdiqlangach dasturlash bosqichiga o'tamiz.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Obuna modeli qanday ishlaydi?</summary>
+            <p>Kerakli mahsulotga oylik obuna orqali ulanib, yangilanishlar va qo'llab-quvvatlashni olasiz.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Mobil versiya ham ishlab berasizmi?</summary>
+            <p>Ha, barcha interfeyslar mobil-first yondashuv bilan moslashtiriladi.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Qo'llab-quvvatlash bormi?</summary>
+            <p>Ha, chat va support orqali texnik yordam beriladi.</p>
+          </details>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <div id="app-footer"></div>
+
+  <script src="assets/js/i18n-fallback.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    (function() {
+      const canvas = document.getElementById('particles');
+      if (!canvas) return;
+      const ctx = canvas.getContext('2d');
+      let particles = [];
+      const COUNT = 60;
+
+      function resize() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+      }
+
+      function init() {
+        particles = [];
+        for (let i = 0; i < COUNT; i++) {
+          particles.push({
+            x: Math.random() * canvas.width,
+            y: Math.random() * canvas.height,
+            r: Math.random() * 2 + 1,
+            dx: (Math.random() - 0.5) * 0.3,
+            dy: (Math.random() - 0.5) * 0.3,
+            alpha: Math.random() * 0.5 + 0.2
+          });
+        }
+      }
+
+      function draw() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        particles.forEach(p => {
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+          ctx.fillStyle = `rgba(167,139,250,${p.alpha})`;
+          ctx.fill();
+
+          p.x += p.dx;
+          p.y += p.dy;
+
+          if (p.x < 0) p.x = canvas.width;
+          if (p.x > canvas.width) p.x = 0;
+          if (p.y < 0) p.y = canvas.height;
+          if (p.y > canvas.height) p.y = 0;
+        });
+
+        // Chiziqlar (particles orasida)
+        particles.forEach((p, i) => {
+          particles.slice(i + 1).forEach(p2 => {
+            const dist = Math.hypot(p.x - p2.x, p.y - p2.y);
+            if (dist < 120) {
+              ctx.beginPath();
+              ctx.moveTo(p.x, p.y);
+              ctx.lineTo(p2.x, p2.y);
+              ctx.strokeStyle = `rgba(167,139,250,${0.1 * (1 - dist / 120)})`;
+              ctx.stroke();
+            }
+          });
+        });
+
+        requestAnimationFrame(draw);
+      }
+
+      window.addEventListener('resize', () => { resize(); init(); });
+      resize();
+      init();
+      draw();
+    })();
+
+    (function () {
+      const statItems = Array.from(document.querySelectorAll(".hero-stat-item[data-count-to]"));
+      if (!statItems.length) return;
+
+      const formatValue = (n, suffix) => `${n}${suffix || "+"}`;
+
+      const animateCounter = (item) => {
+        const target = Number(item.getAttribute("data-count-to") || 0);
+        const suffix = item.getAttribute("data-suffix") || "+";
+        const valueEl = item.querySelector(".hero-stat-value");
+        if (!valueEl || !target) return;
+
+        const duration = 1400;
+        const start = performance.now();
+
+        const tick = (now) => {
+          const progress = Math.min(1, (now - start) / duration);
+          const eased = 1 - Math.pow(1 - progress, 3);
+          const value = Math.round(target * eased);
+          valueEl.textContent = formatValue(value, suffix);
+          if (progress < 1) window.requestAnimationFrame(tick);
+        };
+
+        window.requestAnimationFrame(tick);
+      };
+
+      const io = new IntersectionObserver((entries, obs) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          animateCounter(entry.target);
+          obs.unobserve(entry.target);
+        });
+      }, { threshold: 0.4 });
+
+      statItems.forEach((item) => io.observe(item));
+    })();
+  </script>
+</body>
+</html>

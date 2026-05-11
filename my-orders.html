@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Netrica.com — My orders</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body data-protected="1" data-page="my-orders">
+  <div id="app-header"></div>
+
+  <main id="main" class="container">
+    <section class="section page-intro page-intro-orders">
+      <div class="page-intro-copy">
+        <div class="hero-badge" data-i18n="ui.badge.orderPipeline"></div>
+        <h1 class="h1" data-i18n="page.myOrders.title"></h1>
+        <p class="lead" data-i18n="page.myOrders.subtitle"></p>
+      </div>
+      <div class="page-intro-stats">
+        <div class="page-intro-stat"><span data-i18n="ui.stat.pipe"></span><strong data-i18n="ui.stat.track"></strong></div>
+        <div class="page-intro-stat"><span data-i18n="ui.stat.state"></span><strong data-i18n="ui.stat.live"></strong></div>
+        <div class="page-intro-stat"><span data-i18n="ui.stat.ops"></span><strong data-i18n="ui.stat.sync"></strong></div>
+      </div>
+    </section>
+
+    <section class="section page-shell-stack">
+      <div class="section-title">
+        <h2 data-i18n="page.myOrders.title"></h2>
+        <p class="muted" data-i18n="page.myOrders.subtitle"></p>
+      </div>
+      <div class="card pad user-list-card">
+        <div class="list" id="my-orders"></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="app-footer"></div>
+
+  <script src="assets/js/i18n-fallback.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

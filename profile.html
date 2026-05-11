@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Netrica.com — Profile</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body data-protected="1" data-page="profile">
+  <div id="app-header"></div>
+
+  <main id="main" class="container">
+    <section class="section page-intro page-intro-profile">
+      <div class="page-intro-copy">
+        <div class="hero-badge" data-i18n="ui.badge.identityNode"></div>
+        <h1 class="h1" data-i18n="page.profile.title"></h1>
+        <p class="lead" data-i18n="page.profile.subtitle"></p>
+      </div>
+    </section>
+
+    <section class="section profile-shell">
+      <div class="card pad profile-glance-card">
+        <div class="profile-glance-kicker" data-i18n="ui.profilePage.accountSignal"></div>
+        <h3 data-i18n="ui.profilePage.netricaProfile"></h3>
+        <p class="muted" data-i18n="ui.profilePage.desc"></p>
+        <div class="profile-glance-grid">
+          <div class="profile-glance-item"><span data-i18n="ui.stat.mode"></span><strong data-i18n="ui.profilePage.modeUser"></strong></div>
+          <div class="profile-glance-item"><span data-i18n="ui.stat.status"></span><strong data-i18n="ui.stat.live"></strong></div>
+        </div>
+      </div>
+
+      <div class="card pad profile-form-card">
+      <div class="section-title">
+        <h2 data-i18n="page.profile.title"></h2>
+        <p class="muted" data-i18n="page.profile.subtitle"></p>
+      </div>
+
+        <form id="profile-form" class="form">
+          <div class="field">
+            <label for="p-name" data-i18n="page.profile.name"></label>
+            <input id="p-name" />
+          </div>
+          <div class="field">
+            <label for="p-email" data-i18n="page.profile.email"></label>
+            <input id="p-email" disabled />
+          </div>
+          <button class="btn primary" type="submit" data-i18n="page.profile.save"></button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <div id="app-footer"></div>
+
+  <script src="assets/js/i18n-fallback.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Netrica.com — Admin settings</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body data-admin="1" data-page="admin-settings">
+  <script>window.NETRICA_BASE = "..";</script>
+  <div id="app-header"></div>
+
+  <main id="main" class="container">
+    <section class="section admin-subpage-shell">
+      <div class="section-title">
+        <h2>Settings</h2>
+        <p class="muted">Placeholder</p>
+      </div>
+      <div class="card pad admin-panel-card" style="max-width:640px">
+        <form class="form" id="admin-settings-form">
+          <div class="field">
+            <label data-i18n="ui.adminPage.tzPrice"></label>
+            <input id="set-tz-price" value="$99" />
+          </div>
+          <div class="field">
+            <label data-i18n="ui.adminPage.rateLimit"></label>
+            <input id="set-rate-limit" value="60 req/min" />
+          </div>
+          <button class="btn primary" type="submit" data-i18n="ui.adminPage.save"></button>
+        </form>
+        <div class="small" style="margin-top:10px" data-i18n="ui.adminPage.backendRequired"></div>
+      </div>
+
+      <div class="card pad admin-panel-card" style="max-width:640px; margin-top:12px" id="personal-info">
+        <div class="section-title stack" style="margin:0 0 12px">
+          <h2>Shaxsiy ma’lumotlar</h2>
+          <p class="muted">Joriy akkaunt</p>
+        </div>
+        <form id="personal-info-form" class="form">
+          <div class="field"><label for="pi-name">Ism</label><input id="pi-name" value="" /></div>
+          <div class="field"><label for="pi-email">Email</label><input id="pi-email" type="email" value="" /></div>
+          <div class="field"><label for="pi-role">Role</label><input id="pi-role" value="" disabled /></div>
+          <button class="btn primary" type="submit">Saqlash</button>
+        </form>
+      </div>
+
+      <div class="card pad admin-panel-card" style="max-width:640px; margin-top:12px" id="admin-inbox">
+        <div class="section-title stack" style="margin:0 0 12px">
+          <h2 data-i18n="admin.inbox.title"></h2>
+          <p class="muted" data-i18n="admin.inbox.subtitle"></p>
+        </div>
+        <div class="list" id="admin-messages"></div>
+      </div>
+      <div style="margin-top:12px"><a class="btn" href="index.html" data-i18n="ui.adminPage.back"></a></div>
+    </section>
+  </main>
+
+  <div id="app-footer"></div>
+
+  <script src="../assets/js/i18n-fallback.js"></script>
+  <script src="../assets/js/data.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

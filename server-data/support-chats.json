@@ -1,0 +1,91 @@
+[
+  {
+    "email": "user@demo.com",
+    "name": "Demo User",
+    "messages": [],
+    "updatedAt": "2026-03-13T19:39:43.465Z"
+  },
+  {
+    "email": "guest_j2ytvjny@guest",
+    "name": "Guest",
+    "messages": [
+      {
+        "from": "guest_j2ytvjny@guest",
+        "text": "assalom aleykom",
+        "time": "2026-03-11T19:55:36.497Z",
+        "readByAdmin": true,
+        "readByUser": true
+      },
+      {
+        "from": "admin@netrica.com",
+        "text": "valeykom assalom",
+        "time": "2026-03-11T19:56:04.923Z",
+        "readByAdmin": true,
+        "readByUser": true
+      },
+      {
+        "from": "guest_j2ytvjny@guest",
+        "text": "ыфдщь",
+        "time": "2026-03-12T18:41:47.807Z",
+        "readByAdmin": true,
+        "readByUser": true
+      },
+      {
+        "from": "netrica-ai",
+        "text": "Kechirasiz, sizning xabaringiz tushunarsiz. Men Netrica AI yordamchisiman va Netrica mahsulotlari hamda xizmatları bo'yicha savollaringizga javob bera olaman.\n\nNetrica platformasi haqida qanday ma'lumot olishni istaysiz? Masalan:\n- Tayyor loyihalar haqida\n- Obuna rejalar haqida\n- Buyurtma berish jarayoni haqida\n- Boshqa xizmatlarimiz haqida\n\nSavolingizni aniqroq bering, men yordam berishga tayyorman!",
+        "time": "2026-03-12T18:41:52.971Z",
+        "readByAdmin": true,
+        "readByUser": true
+      },
+      {
+        "from": "guest_j2ytvjny@guest",
+        "text": "salom",
+        "time": "2026-03-12T18:41:54.942Z",
+        "readByAdmin": true,
+        "readByUser": true
+      },
+      {
+        "from": "netrica-ai",
+        "text": "Salom! Men Netrica AI yordamchisiman. \n\nNetrica platformasi va xizmatlarimiz bo'yicha qanday yordam kerak? \n\nSizga quyidagilar haqida ma'lumot bera olaman:\n- Tayyor veb-saytlar va ilovalar\n- Maxsus loyiha buyurtma berish\n- Obuna rejalari\n- Platformadagi imkoniyatlar\n\nQanday savol bor?",
+        "time": "2026-03-12T18:41:58.820Z",
+        "readByAdmin": true,
+        "readByUser": true
+      },
+      {
+        "from": "guest_j2ytvjny@guest",
+        "text": "boshim ogriyabdi",
+        "time": "2026-03-13T10:54:40.777Z",
+        "readByAdmin": false,
+        "readByUser": true
+      },
+      {
+        "from": "netrica-ai",
+        "text": "Kechirasiz, men faqat Netrica mahsulotlari va sayti imkoniyatlari bo'yicha yordam bera olaman. Boshqa savollaringiz bo'lsa, iltimos Netrica xizmatlariga oid savol bering!\n\nNetrica platformasi haqida qanday ma'lumot olishni xohlaysiz? Masalan:\n- Tayyor loyihalar\n- Obuna xizmatlari  \n- Buyurtma berish jarayoni\n- Platformaning boshqa imkoniyatlari",
+        "time": "2026-03-13T10:54:43.972Z",
+        "readByAdmin": true,
+        "readByUser": true
+      },
+      {
+        "from": "guest_j2ytvjny@guest",
+        "text": "netrica hodimlari bilan qanday boglansam boladi",
+        "time": "2026-03-13T10:55:32.778Z",
+        "readByAdmin": false,
+        "readByUser": true
+      },
+      {
+        "from": "netrica-ai",
+        "text": "Netrica xodimlari bilan bog'lanish uchun quyidagi usullardan foydalanishingiz mumkin:\n\n**1. Yordam chati orqali:**\n- Netrica.com saytida yordam chati mavjud\n- Chat orqali to'g'ridan-to'g'ri admin bilan aloqa qilishingiz mumkin\n\n**2. Saytdagi aloqa bo'limlari:**\n- Netrica.com saytida aloqa ma'lumotlari ko'rsatilgan\n- \"Biz haqimizda\" bo'limida qo'shimcha aloqa usullari bo'lishi mumkin\n\n**3. Profilingiz orqali:**\n- Saytda ro'yxatdan o'tgansiz, profilingizdan xabar yuborishingiz mumkin\n\nEng tez javob olish uchun saytdagi **yordam chatidan** foydalanishni tavsiya qilaman. U yerda admin sizning savolingizga tezda javob beradi.\n\nQanday masala bo'yicha murojaat qilmoqchisiz?",
+        "time": "2026-03-13T10:55:40.126Z",
+        "readByAdmin": true,
+        "readByUser": true
+      }
+    ],
+    "updatedAt": "2026-03-13T10:55:40.126Z"
+  },
+  {
+    "email": "guest_cim0dcox@guest",
+    "name": "Guest",
+    "messages": [],
+    "updatedAt": "2026-03-23T04:09:22.902Z"
+  }
+]
