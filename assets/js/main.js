@@ -2594,7 +2594,12 @@
       var user = getUser();
       fetch('/api/support-chats', {
         headers: { 'X-User-Email': userEmail, 'X-User-Role': (user && user.role === 'admin') ? 'admin' : 'user' }
-      }).then(function(r) { return r.json(); }).then(function(data) {
+      })
+      .then(function(r) {
+        if (r.status === 404) throw new Error('notfound');
+        return r.json();
+      })
+      .then(function(data) {
         var items = data.items || [];
         if (!items.length) return;
         var all = getSupportChats();
@@ -2612,7 +2617,13 @@
         writeStore(STORAGE.supportChats, all);
         if (panel.classList.contains('open')) renderMessages();
         checkUnread();
-      }).catch(function() {});
+      })
+      .catch(function(e) {
+        if (e.message === 'notfound') {
+          // Demo fallback: server yo'q, localdan ishlatamiz
+          // Xabar chiqarmaymiz, jim ishlaydi
+        }
+      });
     }
     function getMyThread() {
       const all = getSupportChats();
